@@ -16,7 +16,7 @@ end
 
 def words_five_letters_long(text)
   word_match = []
-  test.each do |word|
+  text.each do |word|
     if (word.scan(/\w{5,}/) == true)
       word_match << word
     end
