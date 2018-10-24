@@ -13,7 +13,7 @@ def words_starting_with_un_and_ending_with_ing(text)
       word_match << word
     end
   end
-  return word_match
+  puts word_match
 end
 
 def words_five_letters_long(text)
@@ -23,7 +23,7 @@ def words_five_letters_long(text)
       word_match << word
     end
   end
-  return word_match
+  puts word_match
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
@@ -41,3 +41,5 @@ def valid_phone_number?(text)
     return false
   end
 end
+
+words_starting_with_un_and_ending_with_ing([uning, ing, unfishing])
