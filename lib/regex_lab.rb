@@ -1,5 +1,4 @@
 def starts_with_a_vowel?(word)
-  puts word.match(/^[aeiouAEIOU]\w+/)
   if (word.match(/^[aeiouAEIOU]\w+/) != nil)
     return true
   else
@@ -30,4 +29,3 @@ def valid_phone_number?(text)
     return false
   end
 end
-puts starts_with_a_vowel?("apple")
