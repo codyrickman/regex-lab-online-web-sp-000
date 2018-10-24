@@ -29,4 +29,4 @@ def valid_phone_number?(text)
     return false
   end
 end
-starts_with_a_vowel?("apple")
+puts starts_with_a_vowel?("apple")
