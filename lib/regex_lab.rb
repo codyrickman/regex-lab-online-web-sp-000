@@ -11,7 +11,7 @@ def words_starting_with_un_and_ending_with_ing(text)
 end
 
 def words_five_letters_long(text)
-  puts text.scan(/\w{5,5}/)
+  text.scan(/\w{5,5}/)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
@@ -29,4 +29,3 @@ def valid_phone_number?(text)
     return false
   end
 end
-words_five_letters_long("extreme briny crepe parking snaps grouping snafu round dog be fork spoon")
