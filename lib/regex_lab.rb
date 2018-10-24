@@ -15,11 +15,11 @@ def words_starting_with_un_and_ending_with_ing(text)
 end
 
 def words_five_letters_long(text)
-  if (text.scan(/\w{5,}/) == true)
-    return true
-  else
-    return false
-  end
+  word_match = []
+  test.each do |word|
+    if (text.scan(/\w{5,}/) == true)
+      word_match << word
+    end
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
