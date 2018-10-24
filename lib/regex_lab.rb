@@ -29,5 +29,3 @@ def valid_phone_number?(text)
     return false
   end
 end
-
-words_starting_with_un_and_ending_with_ing(["uning", "ing", "unfishing"])
