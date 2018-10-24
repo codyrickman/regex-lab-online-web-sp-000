@@ -7,11 +7,13 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  if (text.scan(/un+\w+ing/) == true)
-    return true
-  else
-    return false
+  word_match = []
+  text.each do |word|
+    if (text.scan(/un+\w+ing/) == true)
+      word_match << word
+    end
   end
+  return word_match
 end
 
 def words_five_letters_long(text)
@@ -21,6 +23,7 @@ def words_five_letters_long(text)
       word_match << word
     end
   end
+  return word_match
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
